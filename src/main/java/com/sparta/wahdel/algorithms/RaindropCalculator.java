@@ -8,13 +8,14 @@ public class RaindropCalculator {
         if (number % 3 == 0) {
             isRaindrop = true;
             result += "Pling";
-        } 
+        }
         if (number % 5 == 0) {
             isRaindrop = true;
             result += "Plang";
-        } else if (number % 7 == 0) {
+        }
+        if (number % 7 == 0) {
             isRaindrop = true;
-            result = "Plong";
+            result += "Plong";
         }
         if (!isRaindrop) {
             result = String.valueOf(number);
