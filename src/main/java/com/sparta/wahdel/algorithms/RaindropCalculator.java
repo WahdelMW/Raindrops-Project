@@ -5,6 +5,7 @@ public class RaindropCalculator {
     public static String calculate(int number) {
         String result = "";
         boolean isRaindrop = false;
+
         if (isMultiple(number, 3)) {
             isRaindrop = true;
             result += "Pling";
