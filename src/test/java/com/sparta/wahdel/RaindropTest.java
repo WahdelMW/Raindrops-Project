@@ -84,4 +84,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(-70);
         assertEquals("PlangPlong", result);
     }
+
+    @Test
+    public void testForMaxIntegerInput() {
+        String result = RaindropCalculator.calculate(Integer.MAX_VALUE);
+        assertEquals(String.valueOf(Integer.MAX_VALUE), result);
+    }
 }
