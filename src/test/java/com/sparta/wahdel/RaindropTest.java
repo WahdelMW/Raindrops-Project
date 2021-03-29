@@ -16,4 +16,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(5);
         Assertions.assertEquals("Plang", result);
     }
+
+    @Test
+    public void returnPlong() {
+        String result = RaindropCalculator.calculate(7);
+        Assertions.assertEquals("Plong", result);
+    }
 }
