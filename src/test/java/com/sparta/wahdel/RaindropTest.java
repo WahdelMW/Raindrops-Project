@@ -1,5 +1,6 @@
 package com.sparta.wahdel;
 
+import com.sparta.wahdel.algorithms.RaindropCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -21,5 +22,11 @@ public class RaindropTest {
     public void returnPlong() {
         String result = RaindropCalculator.calculate(7);
         Assertions.assertEquals("Plong", result);
+    }
+
+    @Test
+    public void returnNumber() {
+        String result = RaindropCalculator.calculate(34);
+        Assertions.assertEquals("34", result);
     }
 }

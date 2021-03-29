@@ -1,4 +1,4 @@
-package com.sparta.wahdel;
+package com.sparta.wahdel.utils;
 
 public class Printer {
 
