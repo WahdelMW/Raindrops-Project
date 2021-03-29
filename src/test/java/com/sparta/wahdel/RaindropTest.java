@@ -90,4 +90,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(Integer.MAX_VALUE);
         assertEquals(String.valueOf(Integer.MAX_VALUE), result);
     }
+
+    @Test
+    public void testForMinIntegerInput() {
+        String result = RaindropCalculator.calculate(Integer.MIN_VALUE);
+        assertEquals(String.valueOf(Integer.MIN_VALUE), result);
+    }
 }
