@@ -78,4 +78,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(0);
         assertEquals("PlingPlangPlong", result);
     }
+
+    @Test
+    public void testForNegativeInput() {
+        String result = RaindropCalculator.calculate(-70);
+        assertEquals("PlangPlong", result);
+    }
 }
