@@ -42,4 +42,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(10);
         assertEquals("Plang", result);
     }
+
+    @Test
+    public void returnPlongForMultiplesOf7() {
+        String result = RaindropCalculator.calculate(14);
+        assertEquals("Plong", result);
+    }
 }

@@ -8,7 +8,7 @@ public class RaindropCalculator {
             result = "Pling";
         } else if (number % 5 == 0) {
             result = "Plang";
-        } else if (number == 7) {
+        } else if (number % 7 == 0) {
             result = "Plong";
         } else {
             result = String.valueOf(number);
