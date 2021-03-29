@@ -3,14 +3,16 @@ package com.sparta.wahdel.algorithms;
 public class RaindropCalculator {
 
     public static String calculate(int number) {
-        if (number == 3) {
-            return "Pling";
+        String result;
+        if (number % 3 == 0) {
+            result = "Pling";
         } else if (number == 5) {
-            return "Plang";
+            result = "Plang";
         } else if (number == 7) {
-            return "Plong";
+            result = "Plong";
         } else {
-            return String.valueOf(number);
+            result = String.valueOf(number);
         }
+        return result;
     }
 }
