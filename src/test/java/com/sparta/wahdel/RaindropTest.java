@@ -72,4 +72,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(105);
         assertEquals("PlingPlangPlong", result);
     }
+
+    @Test
+    public void testForInput0() {
+        String result = RaindropCalculator.calculate(0);
+        assertEquals("PlingPlangPlong", result);
+    }
 }
