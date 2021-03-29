@@ -36,4 +36,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(6);
         assertEquals("Pling", result);
     }
+
+    @Test
+    public void returnPlangForMultiplesOf5() {
+        String result = RaindropCalculator.calculate(10);
+        assertEquals("Plang", result);
+    }
 }
