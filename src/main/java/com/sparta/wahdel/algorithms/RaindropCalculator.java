@@ -3,14 +3,20 @@ package com.sparta.wahdel.algorithms;
 public class RaindropCalculator {
 
     public static String calculate(int number) {
-        String result;
+        String result = "";
+        Boolean isRaindrop = false;
         if (number % 3 == 0) {
-            result = "Pling";
-        } else if (number % 5 == 0) {
-            result = "Plang";
+            isRaindrop = true;
+            result += "Pling";
+        } 
+        if (number % 5 == 0) {
+            isRaindrop = true;
+            result += "Plang";
         } else if (number % 7 == 0) {
+            isRaindrop = true;
             result = "Plong";
-        } else {
+        }
+        if (!isRaindrop) {
             result = String.valueOf(number);
         }
         return result;
