@@ -66,4 +66,10 @@ public class RaindropTest {
         String result = RaindropCalculator.calculate(35);
         assertEquals("PlangPlong", result);
     }
+
+    @Test
+    public void returnPlingPlangPlongForMultiplesOf3And5And7() {
+        String result = RaindropCalculator.calculate(105);
+        assertEquals("PlingPlangPlong", result);
+    }
 }
